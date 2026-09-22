@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AgriSentry — IoT-based smart collar system for real-time caprine health monitoring using temperature and motion anomaly detection." />
+  <meta name="theme-color" content="#0b5d43" />
+  <title>AgriSentry | Smart Goat Health Monitoring</title>
+  <link rel="icon" type="image/png" href="assets/agrisentry-logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="AgriSentry home">
+        <span class="brand-mark">
+          <img src="assets/agrisentry-logo-mark.png" alt="AgriSentry logo mark" />
+        </span>
+        <span><strong>AgriSentry</strong><small>Smart Caprine Monitoring</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#users">Users</a>
+        <a href="#access">Access</a>
+        <a class="btn btn-small btn-primary" href="#access">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="hero-kicker">
+            <img src="assets/agrisentry-logo-mark.png" alt="" aria-hidden="true" />
+            <span class="eyebrow">IoT • LoRaWAN • Smart Livestock Monitoring</span>
+          </div>
+          <h1>Earlier attention. Better records. Smarter goat monitoring.</h1>
+          <p class="lead">AgriSentry is an IoT-based smart collar system for real-time caprine health monitoring using neck skin-surface temperature and motion anomaly detection.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#access">Access AgriSentry</a>
+            <a class="btn btn-secondary" href="#features">View Features</a>
+          </div>
+          <div class="hero-meta">
+            <span>Built for Andili-Nueva Visayas Multipurpose Cooperative</span>
+            <span>Mawab, Davao de Oro</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="AgriSentry system overview illustration">
+          <div class="device-card main-card">
+            <div class="card-top"><span class="status-dot"></span> Live monitoring</div>
+            <div class="goat-profile">
+              <div class="avatar"><img src="assets/agrisentry-logo-mark.png" alt="AgriSentry logo mark" /></div>
+              <div><strong>Goat Profile</strong><small>QR-linked health record</small></div>
+            </div>
+            <div class="metric-grid">
+              <div><span>Skin temp</span><strong>36.5°C</strong><small>Normal</small></div>
+              <div><span>Motion</span><strong>Active</strong><small>Monitoring</small></div>
+            </div>
+            <div class="signal-row"><span>Collar</span><b>LoRaWAN connected</b></div>
+          </div>
+          <div class="floating-tag tag-one">QR Profiles</div>
+          <div class="floating-tag tag-two">Health Alerts</div>
+          <div class="floating-tag tag-three">AI Guidance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-strip">
+      <div class="container strip-grid reveal">
+        <div><strong>The challenge</strong><p>Periodic visual checks, numbered ear tags, and paper records can make it difficult to spot unusual temperature or movement early and retrieve complete health information quickly.</p></div>
+        <div class="strip-arrow">→</div>
+        <div><strong>The AgriSentry response</strong><p>Animal-specific sensing, centralized monitoring, alerts, QR-linked records, and AI-assisted guidance support faster and more organized decision-making.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <span class="eyebrow">About the capstone</span>
+          <h2>Connected monitoring designed around a real farm workflow.</h2>
+        </div>
+        <div class="content-stack reveal">
+          <p>AgriSentry combines a wearable smart collar, LoRaWAN communication, a cloud-hosted Laravel and MySQL platform, and responsive web/mobile interfaces. The collar captures neck skin-surface temperature and movement data while the platform organizes monitoring information, alerts, goat profiles, health records, and advisory information.</p>
+          <p>It is designed as an <strong>early-warning and decision-support tool</strong>. AgriSentry does not diagnose disease, prescribe medication, replace rectal/core temperature measurement, or replace consultation with a licensed veterinarian.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="features">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Main features</span>
+          <h2>One platform from collar sensing to caretaker action.</h2>
+          <p>Designed to make monitoring information easier to collect, review, and act on.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14.8V5a2 2 0 1 1 4 0v9.8a4 4 0 1 1-4 0Z"/><path d="M12 8v8"/></svg></div><h3>Smart Collar Monitoring</h3><p>DS18B20 neck skin-surface temperature sensing with MPU6050-based movement and orientation monitoring.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18h12l-1.4-2.2A7.6 7.6 0 0 1 15.5 12V9a3.5 3.5 0 0 0-7 0v3a7.6 7.6 0 0 1-1.1 3.8L6 18Z"/><path d="M10 20h4M12 2v2M4 7l2 1M20 7l-2 1"/></svg></div><h3>Health Alerts</h3><p>Differentiated alerts highlight configured abnormal temperature, motion, and collar conditions for closer attention.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9a10 10 0 0 1 14 0M8 12a6 6 0 0 1 8 0M11 15a2 2 0 0 1 2 0"/><circle cx="12" cy="18" r="1"/></svg></div><h3>LoRaWAN Communication</h3><p>Collar telemetry is sent to a Heltec HT-M7603 gateway and forwarded through the available internet connection.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7M3 20h18"/></svg></div><h3>Centralized Dashboard</h3><p>Review current readings, goat status, monitoring history, collar status, alerts, and recent health information.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><path d="M14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z"/></svg></div><h3>QR-Linked Profiles</h3><p>Each registered goat can be associated with a QR code for faster retrieval of its authorized profile and records.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5h7l2 2h9v9.5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7.5Z"/><path d="M3 7.5V6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v1.5"/></svg></div><h3>Digital Health Records</h3><p>Store newly recorded vaccinations, diagnoses, medications, treatments, remarks, and related health information.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.2 3.3L16.5 7.5l-3.3 1.2L12 12l-1.2-3.3-3.3-1.2 3.3-1.2L12 3Z"/><path d="m18.2 13.5.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2ZM6.2 14.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6.6-1.7Z"/></svg></div><h3>AI-Assisted Guidance</h3><p>Gemini 2.5 Flash provides advisory suggestions for human review based on available monitoring and recorded information.</p></article>
+          <article class="feature-card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v2"/></svg></div><h3>Role-Based Access</h3><p>Functions and records are limited according to assigned user responsibilities and authorization.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Application preview</span>
+          <h2>See the AgriSentry workflow before you sign in.</h2>
+          <p>Replace these preview placeholders with your actual screenshots before final publication.</p>
+        </div>
+        <div class="preview-grid">
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>01</span><b>Web Dashboard Screenshot</b><small>Recommended: Figure E.4</small></div><figcaption>Dashboard — goat status, readings, alerts, and monitoring information.</figcaption></figure>
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>02</span><b>Mobile Interface Screenshot</b><small>Recommended: Figure E.5</small></div><figcaption>Mobile-friendly access for field monitoring.</figcaption></figure>
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>03</span><b>QR Goat Profile Screenshot</b><small>Recommended: Figure E.6</small></div><figcaption>QR-linked goat profile and health information.</figcaption></figure>
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>04</span><b>Monitoring History Screenshot</b><small>Recommended: Figure E.7</small></div><figcaption>Historical temperature and motion monitoring records.</figcaption></figure>
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>05</span><b>Alerts Screenshot</b><small>Recommended: Figure E.8</small></div><figcaption>Warning and urgent alert presentation.</figcaption></figure>
+          <figure class="preview-card reveal"><div class="preview-placeholder"><span>06</span><b>AI Advisory Screenshot</b><small>Recommended: Figure E.10</small></div><figcaption>AI-assisted veterinary guidance with non-diagnostic disclaimer.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="users">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">Users & beneficiaries</span>
+          <h2>Built for the people responsible for everyday goat care and records.</h2>
+        </div>
+        <div class="role-grid">
+          <article class="role-card reveal"><span>01</span><h3>Administrator</h3><p>Manages user access, permissions, system records, and system-level settings.</p></article>
+          <article class="role-card reveal"><span>02</span><h3>Cooperative Staff</h3><p>Maintains goat profiles and health information and reviews monitoring data and records.</p></article>
+          <article class="role-card reveal"><span>03</span><h3>Caretaker</h3><p>Observes goat conditions, receives alerts, checks monitoring information, and accesses authorized records.</p></article>
+          <article class="role-card reveal"><span>04</span><h3>Veterinary Support</h3><p>Can use exported or printed histories, trends, alerts, and recorded medical information as supporting context during consultation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access-section" id="access">
+      <div class="container access-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Access / Get Started</span>
+          <h2>Open the live AgriSentry system.</h2>
+          <p>Authorized users need valid login credentials because goat records and monitoring functions are protected by role-based access.</p>
+          <div class="notice"><strong>Before publishing:</strong> Replace the placeholder link below with the actual deployed AgriSentry web application URL.</div>
+        </div>
+        <div class="steps-card reveal">
+          <ol>
+            <li>Open the official AgriSentry web application.</li>
+            <li>Enter the username/email and password provided by the administrator.</li>
+            <li>Change the temporary password if prompted on first login.</li>
+            <li>Use the dashboard to review goat status, readings, alerts, and monitoring history.</li>
+            <li>Use QR scanning to open a registered goat profile when needed.</li>
+          </ol>
+          <a class="btn btn-primary btn-block" href="https://YOUR-AGRISENTRY-APP-URL.example" target="_blank" rel="noopener">Access AgriSentry</a>
+          <p class="tiny">Edit this URL in <code>index.html</code> before deployment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="assets/agrisentry-logo-full.png" alt="AgriSentry official logo" /><p>IoT-Based Smart Collar System for Real-Time Caprine Health Monitoring</p></div>
+      <div><strong>Proponents</strong><p>Jefril E. Arao<br />Shaira Marie C. Canadalla</p></div>
+      <div><strong>Institution</strong><p>Assumption College of Davao<br />September 2026</p></div>
+    </div>
+    <div class="container footer-bottom">AgriSentry supports early monitoring and decision support and does not replace veterinary diagnosis or treatment.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
