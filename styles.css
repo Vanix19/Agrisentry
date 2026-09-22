@@ -158,3 +158,17 @@ button,input,textarea,select{font:inherit}
 .btn{font-weight:750;letter-spacing:-.01em}
 .hero h1,.section-heading h2{font-weight:800}
 .feature-card h3,.role-card h3{font-weight:750;letter-spacing:-.02em}
+
+/* Actual application screenshot previews */
+.preview-image{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;aspect-ratio:16/10;overflow:hidden;
+  background:linear-gradient(145deg,#eef8f2,#f8fbf9);
+  border-bottom:1px solid #edf4ef;position:relative
+}
+.preview-image img{width:100%;height:100%;object-fit:contain;transition:transform .3s ease}
+.preview-card:hover .preview-image img{transform:scale(1.025)}
+.preview-image-mobile img{object-fit:contain;background:#071219}
+.preview-card figcaption{display:block;line-height:1.55}
+.preview-card figcaption strong{color:var(--green-950);font-weight:800}
+.preview-number{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:26px;margin-right:8px;padding:0 8px;border-radius:999px;background:var(--green-100);color:var(--green-800);font-size:11px;font-weight:900;letter-spacing:.04em}
