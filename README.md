@@ -6,6 +6,12 @@ A static promotional website for the AgriSentry capstone project.
 - `index.html` — main website
 - `styles.css` — design and responsive layout
 - `script.js` — mobile menu and subtle reveal animations
+- `feedback-thanks.html` — confirmation page after sending feedback
+
+## Private feedback
+The Feedback form uses Netlify Forms. Deploy this folder to Netlify, then enable form detection for the site if it is not already enabled. After deployment, submit a test message and check **Site dashboard → Forms → agrisentry-feedback**. Only people granted access to that Netlify site dashboard can view submissions; do not share dashboard access with regular users. Set up email notifications for the development team in Netlify Forms if desired. The form collects an optional name and email and a required message.
+
+Netlify Forms works after Netlify processes the deployed HTML. Opening the files locally or publishing them on GitHub Pages will show the form, but submissions will not be stored there. To use a different host, connect the form to a private server endpoint before publishing. Do not create a public feedback listing or expose submissions through frontend JavaScript.
 
 ## Before publishing
 1. Open `index.html`.
