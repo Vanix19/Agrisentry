@@ -13,3 +13,17 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Paste the deployed Google Apps Script /exec URL below after following FEEDBACK_SETUP.md.
+const feedbackEndpoint = '';
+const feedbackForm = document.querySelector('#feedback-form');
+if (feedbackForm) {
+  const submit = feedbackForm.querySelector('button[type="submit"]');
+  const status = document.querySelector('#feedback-status');
+  if (/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(feedbackEndpoint)) {
+    feedbackForm.action = feedbackEndpoint;
+    submit.disabled = false;
+  } else {
+    status.textContent = 'Feedback is being set up. Please try again later.';
+  }
+}
