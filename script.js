@@ -14,8 +14,8 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Paste the deployed Google Apps Script /exec URL below after following FEEDBACK_SETUP.md.
-const feedbackEndpoint = '';
+// Public submission endpoint. Feedback remains in the admin's restricted Google Sheet.
+const feedbackEndpoint = 'https://script.google.com/macros/s/AKfycbye8hPH66Fotosgo1rvLYNa_QqQeRSkjjWKJHDUIHEu_rsGSDRrUcl4k8t9uyySuz_Y2A/exec';
 const feedbackForm = document.querySelector('#feedback-form');
 if (feedbackForm) {
   const submit = feedbackForm.querySelector('button[type="submit"]');
