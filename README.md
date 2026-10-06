@@ -6,11 +6,6 @@ A static promotional website for the AgriSentry capstone project.
 - `index.html` — main website
 - `styles.css` — design and responsive layout
 - `script.js` — mobile menu and subtle reveal animations
-- `Feedback.gs` — private Google Sheets feedback receiver (install separately)
-- `FEEDBACK_SETUP.md` — steps to connect feedback on GitHub Pages
-
-## Private feedback
-Follow `FEEDBACK_SETUP.md` to connect the GitHub Pages form to a private admin-owned Google Sheet. The button stays disabled until the endpoint is configured. No feedback is stored in or displayed by the public GitHub repository.
 
 ## Before publishing
 1. Open `index.html`.
